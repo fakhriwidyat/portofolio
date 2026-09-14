@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fakhri — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="name">Fakhri</div>
+  <div class="caption">PORTFOLIO LOADING</div>
+  <div class="bar"><span></span></div>
+</div>
+
+<div class="navbar-outer">
+  <nav>
+    <span class="logo">PORTFOLIO.</span>
+    <div class="navlinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contacts</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3 7.2 7.2 0 0 0 21 12.8Z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>
+    </button>
+  </nav>
+</div>
+
+<div class="wrap">
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div>
+      <h1>Hi, I'm Fakhri</h1>
+      <p class="role"><span id="typedRole"></span><span class="cursor">|</span></p>
+      <p class="bio">
+        A passionate student exploring web technology and graphic design, dedicated to building clean digital solutions and continuous learning.
+      </p>
+      <div class="cta-row">
+        <a class="btn solid" href="#projects">View Works →</a>
+        <a class="btn outline" href="#contact">Contact Me</a>
+      </div>
+      <p class="connect-label">CONNECT</p>
+      <div class="socials">
+        <!-- LINK INSTAGRAM -->
+        <a href="https://www.instagram.com/fbgs18_?stkn=YmcwOGV4OHg1bXRt" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+        <!-- LINK GITHUB -->
+        <a href="https://github.com/fakhriwidyat?tab=repositories" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+        <!-- LINK LINKEDIN -->
+        <a href="https://www.linkedin.com/in/fakhri-bagas-18b0373b7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>
+      </div>
+    </div>
+
+    <!-- FOTO HERO -->
+    <div class="hero-photo">
+      <div class="photo-circle" style="border: none; overflow: hidden; padding: 0;">
+        <img src="ft/profil.jpeg" alt="Fakhri" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+      </div>
+      <div class="badge badge-1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>Active Student</div>
+      <div class="badge badge-2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7"/></svg></span>Tech &amp; Design</div>
+      <div class="badge badge-3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Team Player</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="block">
+    <div class="sec-head reveal">
+      <p class="eyebrow">PROFILE</p>
+      <h2 class="sec-title">About Me</h2>
+    </div>
+    <div class="about-grid reveal">
+      
+      <!-- FOTO ABOUT -->
+      <div class="about-photo" style="border: none; overflow: hidden; padding: 0;">
+        <img src="ft/about.jpeg" alt="Fakhri" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+      </div>
+
+      <div>
+        <div class="about-cols">
+          <div>
+            <h3>Who Am I</h3>
+            <p>I am a student with a strong passion for technology and digital development. I love exploring new things and combining technical logic with my hobby in graphic design to create works that are not only functional but also visually appealing. Outside of my studies, I am very active in sports, especially football, which is my way of staying fit while developing teamwork skills.</p>
+          </div>
+          <div>
+            <h3>My Approach</h3>
+            <p>As an active learner, I bring curiosity and discipline to every task or project I undertake. I always strive to balance technical understanding with design aesthetics. Inspired by the dynamics of football, I prioritize hard work, efficient strategy, perseverance when facing challenges (like bugs or new obstacles), and solid collaboration when working in a team.</p>
+          </div>
+        </div>
+        <p class="pd-title">Personal Details</p>
+        <div class="pd-grid">
+          <div><p class="lbl">NAME</p><p class="val">Fakhri Bagas Widyatmko</p></div>
+          <div><p class="lbl">LOCATION</p><p class="val">Purwokerto, Indonesia</p></div>
+          <div><p class="lbl">PHONE</p><p class="val">+62 858 - 7833 - 5732</p></div>
+          <div><p class="lbl">EMAIL</p><p class="val">bagasf534@gmail.com</p></div>
+          <div><p class="lbl">EDUCATION</p><p class="val">SMK Telkom Purwokerto</p></div>
+          <div><p class="lbl">STATUS</p><p class="val">Student</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / MY JOURNEY ===== -->
+  <section id="experience" class="block">
+    <div class="sec-head reveal">
+      <p class="eyebrow">MY JOURNEY</p>
+      <h2 class="sec-title">Education &amp; Activities</h2>
+    </div>
+    <div class="timeline reveal" id="timeline">
+      <div class="timeline-track"><span id="timelineFill"></span></div>
+
+      <!-- ITEM 1: LOMBA JHIC -->
+      <div class="t-item">
+        <div class="t-card-wrap">
+          <p class="t-year">2024</p>
+          <div class="t-card">
+            <p class="t-role">JHIC Web Development Competition</p>
+            <p class="t-company">PARTICIPANT</p>
+            <p class="t-desc">Designed and developed a web project for the JHIC competition, sharpening coding execution, problem-solving, and time management skills under competition standards.</p>
+            <div class="t-tags"><span>WEB DEV</span><span>JHIC</span><span>PROBLEM SOLVING</span></div>
+          </div>
+        </div>
+        <span class="t-dot"></span>
+        <div></div>
+      </div>
+
+      <!-- ITEM 2: ORGANISASI PRAMUKA -->
+      <div class="t-item right">
+        <div></div>
+        <span class="t-dot"></span>
+        <div class="t-card-wrap">
+          <p class="t-year">2023 — Present</p>
+          <div class="t-card">
+            <p class="t-role">Active Scout Member (Pramuka)</p>
+            <p class="t-company">SMK TELKOM PURWOKERTO</p>
+            <p class="t-desc">Actively involved in scout organizational events, honing leadership qualities, discipline, adaptability, and strong teamwork.</p>
+            <div class="t-tags"><span>LEADERSHIP</span><span>TEAMWORK</span><span>DISCIPLINE</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3: PENDIDIKAN -->
+      <div class="t-item">
+        <div class="t-card-wrap">
+          <p class="t-year">2023 — Present</p>
+          <div class="t-card">
+            <p class="t-role">Vocational High School Student</p>
+            <p class="t-company">SMK TELKOM PURWOKERTO</p>
+            <p class="t-desc">Studying software engineering fundamentals, web development, and graphic design to build a solid technical foundation.</p>
+            <div class="t-tags"><span>SOFTWARE ENGINEERING</span><span>TECH</span><span>DESIGN</span></div>
+          </div>
+        </div>
+        <span class="t-dot"></span>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="block">
+    <div class="sec-head reveal">
+      <p class="eyebrow">SKILLS &amp; TOOLS</p>
+      <h2 class="sec-title">My Tech Stack</h2>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-block-head">
+        <div>
+          <h3>Frontend Languages &amp; Frameworks</h3>
+          <p>Technologies and frameworks I use to build modern, responsive, and interactive user interfaces.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card"><div class="skill-dot">JS</div><div class="name">JavaScript</div></div>
+          <div class="skill-card"><div class="skill-dot">TS</div><div class="name">TypeScript</div></div>
+          <div class="skill-card"><div class="skill-dot">R</div><div class="name">React</div></div>
+          <div class="skill-card"><div class="skill-dot">N</div><div class="name">Next.js</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-block-head">
+        <div>
+          <h3>Backend Core</h3>
+          <p>Server-side technologies, databases, and API architectures I use to power robust web applications.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card"><div class="skill-dot">N</div><div class="name">Node.js</div></div>
+          <div class="skill-card"><div class="skill-dot">E</div><div class="name">Express.js</div></div>
+          <div class="skill-card"><div class="skill-dot">SQL</div><div class="name">MySQL</div></div>
+          <div class="skill-card"><div class="skill-dot">M</div><div class="name">MongoDB</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="block">
+    <div class="sec-head reveal">
+      <p class="eyebrow">PORTFOLIO</p>
+      <h2 class="sec-title">Selected Works</h2>
+    </div>
+    <div class="proj-grid reveal">
+      
+      <!-- PROYEK 1: TRASHURE -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="ft/trshure.jpeg" alt="Trashure Website" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+        </div>
+        <div class="proj-body">
+          <p class="proj-title">Trashure</p>
+          <p class="proj-desc">A waste management web platform designed to facilitate eco-friendly practices and recycling activities. As the Full-Stack Developer handling both frontend and backend, I developed the platform end-to-end using HTML, CSS, JavaScript, PHP, and MySQL. I built dynamic, responsive interfaces for seamless user interaction while engineering the server-side logic and database structures to handle data processing efficiently. The system focuses on intuitive user experience, smooth navigation, and reliable performance for tracking and managing waste recycling workflows.</p>
+          <a class="proj-btn" href="project-trashure.html">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <!-- PROYEK 2: WEB COFFEE -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="ft/stemla.jpeg" alt="Stemla Coffee Shop" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+        </div>
+        <div class="proj-body">
+          <p class="proj-title">Stemla Coffee Shop</p>
+          <p class="proj-desc">A "Warm Minimalism"-themed landing page for a specialty coffee shop, built as a single-page website featuring signature menu highlights, a shop atmosphere gallery, and location details. As the Frontend Developer, I refactored an initial single-file prototype into a clean, modular codebase—separating markup, styling, and logic—while improving accessibility and adding real interactivity, including a fully functional mobile navigation menu that was missing from the original design. The focus was on clean code architecture, responsive layout, and a cohesive visual identity built around earthy tones and editorial typography.</p>
+          <a class="proj-btn" href="project-coffee.html">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <!-- PROYEK 3: SMK TELKOM (JHIC) -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="ft/smk.jpeg" alt="SMK Telkom Purwokerto Redesign" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+        </div>
+        <div class="proj-body">
+          <p class="proj-title">SMK Telkom Redesign (JHIC)</p>
+          <p class="proj-desc">A "Digital Smart School"-themed website designed for the JHIC 2026 competition, featuring student enrollment (PPDB), program details, career placement services (BKK), and AI capabilities (STELA AI & NextTel AI). As the UI/UX Designer, I handled user needs research, information architecture, and everything from wireframes to high-fidelity prototypes, while also establishing a design system (colors, typography, UI components) to guide the development team. The design focused on intuitive navigation, clear calls-to-action (CTAs) for enrollment, and a visual style that builds trust among prospective students.</p>
+          <a class="proj-btn" href="project-smktelkom.html">VIEW DETAILS</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="block">
+    <div class="sec-head reveal">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2 class="sec-title">Contact Me</h2>
+    </div>
+    <div class="contact-box reveal">
+      <h3>Send an Email directly.</h3>
+      
+      <!-- FORM KONTAK FORMSPREE -->
+      <form id="contactForm" action="https://formspree.io/f/moeqoeab" method="POST">
+        <div class="field"><label>NAME</label><input type="text" name="name" placeholder="John Doe" required></div>
+        <div class="field"><label>EMAIL</label><input type="email" name="email" placeholder="johndoe@example.com" required></div>
+        <div class="field"><label>MESSAGE</label><textarea name="message" placeholder="Your message here..." required></textarea></div>
+        <button class="send-btn" type="submit" id="submitBtn">SEND MESSAGE</button>
+      </form>
+
+      <p class="alt-contact">bagasf534@gmail.com · +62 858 - 7833 - 5732</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Fakhri Bagas Widyatmko. All rights reserved.</footer>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/scroll-effects.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>
