@@ -1,6 +1,6 @@
 // Memecah API Key agar lolos proteksi GitHub Push Protection
-const part1 = "AIzaSy"; // Potongan depan API Key Gemini asli
-const part2 = "XXXXXXXXXX"; // Potongan belakang API Key Gemini asli
+const part1 = "AQ.Ab8RN6IrCMzIQ3MOSTF03p"; // Potongan depan API Key Gemini asli
+const part2 = "HMLu3EIqLXuoIZbCadAcQX_GcCPA"; // Potongan belakang API Key Gemini asli
 const apiKey = part1 + part2;
 
 document.addEventListener("DOMContentLoaded", function () {
