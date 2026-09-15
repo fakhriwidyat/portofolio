@@ -77,7 +77,8 @@ async function sendMessage() {
     if (response.ok && data.reply) {
       appendMessage(data.reply, 'bot');
     } else {
-      appendMessage('Maaf, ada kendala saat menghubungkan ke AI.', 'bot');
+      // Menampilkan pesan error spesifik dari backend api/chat.js
+      appendMessage(data.error || 'Maaf, ada kendala saat menghubungkan ke AI.', 'bot');
     }
   } catch (error) {
     if (document.getElementById(loadingId)) {
