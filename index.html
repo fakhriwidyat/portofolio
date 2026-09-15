@@ -271,11 +271,41 @@
   <footer>© 2026 Fakhri Bagas Widyatmko. All rights reserved.</footer>
 </div>
 
+<!-- ===== FLOATING CHATBOT WIDGET ===== -->
+<div id="ai-chat-widget" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <!-- Tombol Melayang -->
+  <button id="chat-toggle-btn" style="background-color: #111; color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 12px 20px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); display: flex; align-items: center; gap: 8px; transition: transform 0.2s ease;">
+    <span>✨ Ask Fakhri AI</span>
+  </button>
+
+  <!-- Jendela Pop-up Chat -->
+  <div id="chat-box" style="display: none; position: absolute; bottom: 65px; right: 0; width: 330px; height: 420px; background: #ffffff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 1px solid #e5e7eb; flex-direction: column; overflow: hidden; font-family: 'Plus Jakarta Sans', sans-serif;">
+    <div style="background: #111; color: #fff; padding: 14px 16px; font-weight: 600; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%;"></span>
+        <span>Fakhri Assistant</span>
+      </div>
+      <span id="close-chat" style="cursor: pointer; font-size: 18px; line-height: 1;">&times;</span>
+    </div>
+    <div id="chat-messages" style="flex: 1; padding: 14px; overflow-y: auto; font-size: 13px; color: #111; display: flex; flex-direction: column; gap: 8px;">
+      <div style="background: #f3f4f6; padding: 10px 14px; border-radius: 12px; border-bottom-left-radius: 2px; max-width: 85%; line-height: 1.4;">
+        Halo! Saya asisten virtual Fakhri. Ada yang ingin kamu tanyakan tentang skill, proyek, atau pengalaman Fakhri?
+      </div>
+    </div>
+    <div style="padding: 10px 12px; border-top: 1px solid #f3f4f6; display: flex; gap: 6px; background: #fff;">
+      <input type="text" id="chat-input" placeholder="Tanyakan sesuatu..." style="flex: 1; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px 12px; font-size: 12px; outline: none; font-family: inherit;">
+      <button id="send-btn" style="background: #111; color: #fff; border: none; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; font-family: inherit;">Send</button>
+    </div>
+  </div>
+</div>
+
 <script src="js/theme.js"></script>
 <script src="js/loader.js"></script>
 <script src="js/typewriter.js"></script>
 <script src="js/scroll-effects.js"></script>
 <script src="js/contact.js"></script>
+<!-- SKRIP CHATBOT -->
+<script src="js/chatbot.js"></script>
 
 </body>
 </html>
